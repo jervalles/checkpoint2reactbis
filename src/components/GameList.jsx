@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Game from "./Game.jsx";
 
 class GameList extends React.Component {
   constructor(props) {
@@ -29,9 +30,10 @@ class GameList extends React.Component {
       <div className="GameList">
         test
         {this.state.games.map(game => {
+          console.log(game.name);
           return (
             <div>
-              <h4>{game.name}</h4>
+              <Game name={game.name} />
             </div>
           );
         })}
