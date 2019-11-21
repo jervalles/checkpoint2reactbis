@@ -32,7 +32,11 @@ class GameList extends React.Component {
           console.log(game.name);
           return (
             <div>
-              <Game name={game.name} rating={game.rating} />
+              <Game
+                name={game.name}
+                rating={game.rating}
+                background_image={game.background_image}
+              />
             </div>
           );
         })}
