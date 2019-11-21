@@ -28,12 +28,11 @@ class GameList extends React.Component {
   render() {
     return (
       <div className="GameList">
-        test
         {this.state.games.map(game => {
           console.log(game.name);
           return (
             <div>
-              <Game name={game.name} />
+              <Game name={game.name} rating={game.rating} />
             </div>
           );
         })}
