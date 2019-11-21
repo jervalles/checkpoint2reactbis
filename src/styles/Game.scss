@@ -1,0 +1,12 @@
+.Game {
+  background-color: rgb(245, 205, 132);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  padding: 0 0 10px 0;
+  .backgroundimages {
+    width: 230px;
+  }
+}

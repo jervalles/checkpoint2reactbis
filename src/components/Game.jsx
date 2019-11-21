@@ -1,13 +1,15 @@
 import React from "react";
+import "../styles/Game.scss";
 
 function Game(props) {
   return (
     <div className="Game">
       <h4>{props.name}</h4>
-      Rating : {props.rating}
       <div>
-        <img src={props.background_image} />
+        <img className="backgroundimages" src={props.background_image} />
       </div>
+      Rating : {props.rating}
+      <div></div>
     </div>
   );
 }
