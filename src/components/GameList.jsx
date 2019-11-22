@@ -44,7 +44,7 @@ class GameList extends React.Component {
           }
           className="gameListButton"
         >
-          Higher Rating Games
+          {this.state.changeButton ? "All Games" : "Best games"}
         </button>
         {this.state.games.map(game => {
           return (
