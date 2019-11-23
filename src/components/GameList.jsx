@@ -49,6 +49,7 @@ class GameList extends React.Component {
         {this.state.games.map(game => {
           return (
             <Game
+              id={game.id}
               name={game.name}
               rating={game.rating}
               background_image={game.background_image}
