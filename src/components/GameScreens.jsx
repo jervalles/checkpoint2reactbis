@@ -1,5 +1,6 @@
 import React from "react";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
 class GameScreens extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class GameScreens extends React.Component {
   render() {
     return (
       <div className="gamePage">
+        <Link to={`/`}>Back Home</Link>
         <h1>Screenshots</h1>
         <div>
           {this.state.game.map(screen => {
